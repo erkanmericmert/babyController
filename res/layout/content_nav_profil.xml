@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".navProfil"
+    tools:showIn="@layout/app_bar_nav_profil">
+
+
+    <TextView
+        android:id="@+id/profileNameText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:text="İsim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileSurnameText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="55dp"
+        android:text="Soyisim"
+        app:layout_constraintBottom_toBottomOf="@+id/profileBirthdayText"
+        app:layout_constraintEnd_toEndOf="@+id/profileNameText"
+        app:layout_constraintStart_toStartOf="@+id/profileNameText"
+        app:layout_constraintTop_toTopOf="@+id/profileNameText" />
+
+    <TextView
+        android:id="@+id/profileBirthdayText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="107dp"
+        android:text="Doğum Tarihi"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePasswordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileNameText" />
+
+    <EditText
+        android:id="@+id/profileEmailText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="54dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/profilePasswordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileBirthdayText" />
+
+    <EditText
+        android:id="@+id/profilePasswordText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profilChangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Şifre Değiştir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editProfileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="changePassword"/>
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="89dp"
+        android:text="Düzenle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilChangeButton"
+        android:onClick="editProfile"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

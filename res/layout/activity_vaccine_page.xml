@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VaccinePage">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Doğum Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatit B 1.Doz"
+                android:onClick="onCheckboxClicked"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="1.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatit B 2.Doz" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="2.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BCG(Verem) 1.Doz" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DaBT - İPA - Hib 1.Doz" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KPA 1.Doz" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="4.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DaBT - İPA - Hib 2.Doz" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KPA 2.Doz" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="6.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatit B 3.Doz" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DaBT - İPA - Hib 3.Doz" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OPA 1.Doz" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="12.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KPA Pekiştirme" />
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KKK" />
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Su Çiçeği" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="18.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DaBT - İPA - Hib Pekiştirme" />
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OPA 2.Doz" />
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatit A 1.Doz" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="24.Ay Aşıları"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hepatit A 2.Doz" />
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:text="\n\n\n Hepatit B: Hepatit B Aşısı\nBCG (Verem): Bacille-Calmette-Guerin (Verem) Aşısı\nDaBT - İPA - Hib: Difteri, Boğmaca, Tetanos, İnaktif Polio, Hemofilus Influenza Tip B Aşısı (Beşli Karma Aşı)\nKPA: Konjüge Pnömokok Aşısı\nKKK: Kızamık, Kızamıkçık, Kabakulak Aşısı\nDaBT - İPA: Dörtlü Karma Aşı (Difteri-Boğmaca-Tetanoz- Çocuk Felci/DaBT-İPA)\nOPA: Oral Polio Aşısı (Çocuk Felci) Aşısı\nTd: Erişkin Tipi Difteri - Tetanos Aşısı\nHepatit A: Hepatit A Aşısı\n\n\nSağlık Bakanlığı'nın aşı takvimine göre hazırlanmıştır."
+                tools:layout_editor_absoluteX="-448dp"
+                tools:layout_editor_absoluteY="-67dp"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

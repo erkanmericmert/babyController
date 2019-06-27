@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.erkanmericmert.babycontroller">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Baby Controller"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VaccinePage"></activity>
+        <activity android:name=".babyDetails" />
+        <activity
+            android:name=".navTakvim"
+            android:label="@string/title_activity_nav_takvim"
+            android:parentActivityName=".HomeNav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.HomeNav" />
+        </activity>
+        <activity
+            android:name=".navProfil"
+            android:label="@string/title_activity_nav_profil"
+            android:parentActivityName=".HomeNav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.HomeNav" />
+        </activity>
+        <activity
+            android:name=".navMelodi"
+            android:label="@string/title_activity_nav_melodi"
+            android:parentActivityName=".HomeNav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.HomeNav" />
+        </activity>
+        <activity
+            android:name=".navGrafik"
+            android:label="@string/title_activity_nav_grafik"
+            android:parentActivityName=".navBebekKontrol"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.navBebekKontrol" />
+        </activity>
+        <activity
+            android:name=".navDis"
+            android:label="@string/title_activity_nav_dis"
+            android:parentActivityName=".navBebekKontrol"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.navBebekKontrol" />
+        </activity>
+        <activity
+            android:name=".navCocukEkle"
+            android:label="@string/title_activity_nav_cocuk_ekle"
+            android:parentActivityName=".HomeNav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.HomeNav" />
+        </activity>
+        <activity
+            android:name=".navBebekKontrol"
+            android:label="@string/title_activity_nav_bebek_kontrol"
+            android:parentActivityName=".HomeNav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.erkanmericmert.babycontroller.HomeNav" />
+        </activity>
+        <activity
+            android:name=".HomeNav"
+            android:label="@string/title_activity_home_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".KayitOl" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
